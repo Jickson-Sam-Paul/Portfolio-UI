@@ -1,0 +1,26 @@
+/* Additional chat-specific styles */
+/* Most styles are handled by Tailwind utilities, but this file is here for future customizations */
+
+/* Smooth scrolling for chat container */
+.chat-container {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling for dark theme */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: rgb(17 24 39);
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: rgb(55 65 81);
+  border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(75 85 99);
+}
+
