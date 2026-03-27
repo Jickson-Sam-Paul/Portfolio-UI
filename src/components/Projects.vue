@@ -18,7 +18,9 @@
               <template v-if="project.images?.length">
                 <img
                   :src="project.images[currentImageIndexes[index]]"
-                  :alt="`${project.title} preview ${currentImageIndexes[index] + 1}`"
+                  :alt="`${project.title} preview ${
+                    currentImageIndexes[index] + 1
+                  }`"
                   class="h-full w-full object-cover"
                 />
 
@@ -210,34 +212,39 @@ const advancedVueComponentImages = [
   ).href,
 ];
 
+const flowcraftImages = [
+  new URL(
+    "../resources/flowcraft/Screenshot 2026-03-27 at 12.34.06 PM.png",
+    import.meta.url
+  ).href,
+  new URL(
+    "../resources/flowcraft/Screenshot 2026-03-27 at 11.21.59 PM.png",
+    import.meta.url
+  ).href,
+  new URL(
+    "../resources/flowcraft/Screenshot 2026-03-27 at 12.43.16 PM.png",
+    import.meta.url
+  ).href,
+];
+
 const projects = [
   {
     title: "Advanced Vue Component Library",
     description:
       "A modern Vue component library with polished, reusable UI patterns and rich interactions. Built to demonstrate production-grade component architecture, composability, and developer-friendly APIs.",
     tech: ["Vue 3", "TypeScript", "Vite", "Storybook", "Vitest"],
-    website:
-      "https://jickson-advanced-vue-components.jsp4sbk.workers.dev/",
+    website: "https://jickson-advanced-vue-components.jsp4sbk.workers.dev/",
     github: "",
     images: advancedVueComponentImages,
   },
   {
-    title: "Task Management Dashboard",
+    title: "FlowCraft - Visual Workflow Builder",
     description:
-      "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Includes analytics dashboard and export capabilities.",
-    tech: ["Vue 3", "Nuxt", "Supabase", "Vuetify", "Pinia"],
-    website: "",
+      "Built a drag-and-drop workflow builder with 11 configurable node types (triggers, actions, conditions, outputs), topological execution simulation with animated state transitions, and persistent workflow storage. Implemented a Zustand-powered state architecture with topological sort-based execution ordering, node configuration panels, and JSON export; deployed on Cloudflare Pages.",
+    tech: ["ReactJS", "TypeScript", "React Flow", "Zustand", "Tailwind CSS"],
+    website: "https://react-flow-ui-demo.jsp4sbk.workers.dev/",
     github: "",
-    images: [],
-  },
-  {
-    title: "Design System Library",
-    description:
-      "Comprehensive component library with 50+ accessible components, extensive documentation, and Storybook integration. Used across multiple production applications.",
-    tech: ["Vue 3", "TypeScript", "Vite", "Storybook", "Vitest"],
-    website: "",
-    github: "",
-    images: [],
+    images: flowcraftImages,
   },
 ];
 
