@@ -9,11 +9,7 @@
           v-for="(message, index) in chatStore.allMessages"
           :key="message.id"
           :class="[
-            index === 0
-              ? 'mt-0'
-              : isFirstInRoleGroup(index)
-                ? 'mt-4'
-                : 'mt-1',
+            index === 0 ? 'mt-0' : isFirstInRoleGroup(index) ? 'mt-4' : 'mt-1',
           ]"
         >
           <TypingIndicator

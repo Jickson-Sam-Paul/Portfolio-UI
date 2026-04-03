@@ -5,7 +5,7 @@ export type Message = {
 };
 
 const API_URL =
-  "https://portfolio-fastapi-qe-backend-production.up.railway.app/api/chat";
+  "https://portfolio-backend-production-9aab.up.railway.app/api/chat";
 
 export async function sendChat(
   messages: Message[]
