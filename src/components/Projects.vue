@@ -227,6 +227,12 @@ const flowcraftImages = [
   ).href,
 ];
 
+const intentionalBrowsingImages = [
+  new URL("../resources/intentional_browsing/popup.png", import.meta.url).href,
+  new URL("../resources/intentional_browsing/overlay.png", import.meta.url)
+    .href,
+];
+
 const projects = [
   {
     title: "Advanced Vue Component Library",
@@ -253,7 +259,7 @@ const projects = [
     tech: ["JavaScript", "Chrome Extension", "Manifest V3", "HTML", "CSS"],
     website: "",
     github: "https://github.com/Jickson-Sam-Paul/Intentional-Browsing",
-    images: [],
+    images: intentionalBrowsingImages,
   },
 ];
 
