@@ -246,6 +246,15 @@ const projects = [
     github: "",
     images: flowcraftImages,
   },
+  {
+    title: "Intentional Browsing",
+    description:
+      "A minimal Chrome extension that helps reduce distracting browsing with supportive controls instead of harsh blocking. Built Hard Mode for full site blocking, Timed Mode for custom usage allowances, an in-page pause overlay, and local-only browser storage with no tracking or external server.",
+    tech: ["JavaScript", "Chrome Extension", "Manifest V3", "HTML", "CSS"],
+    website: "",
+    github: "https://github.com/Jickson-Sam-Paul/Intentional-Browsing",
+    images: [],
+  },
 ];
 
 const currentImageIndexes = ref(projects.map(() => 0));
